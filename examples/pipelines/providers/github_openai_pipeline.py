@@ -17,7 +17,7 @@ class Pipeline:
         # The identifier must be unique across all pipelines.
         # The identifier must be an alphanumeric string that can include underscores or hyphens. It cannot contain spaces, special characters, slashes, or backslashes.
         # self.id = "azure_openai_pipeline"
-        self.name = "Github OpenAI Pipeline"
+        self.name = "Github OpenAI O1-preview"
         self.valves = self.Valves(
             **{
                 "AZURE_OPENAI_API_KEY": os.getenv("AZURE_OPENAI_API_KEY", "your-azure-openai-api-key-here"),
